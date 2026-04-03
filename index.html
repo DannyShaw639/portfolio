@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Shaw | Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --accent: #2563eb;
+            --border: #e5e5e5;
+            --card-bg: #fff;
+            --tag-bg: #f0f4f8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'IBM Plex Sans', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; font-size: 16px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+        header { padding: 80px 0 60px; border-bottom: 1px solid var(--border); }
+        header h1 { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 2.5rem; font-weight: 500; margin-bottom: 12px; letter-spacing: -0.02em; }
+        header .subtitle { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 24px; }
+        .contact-row { display: flex; flex-wrap: wrap; gap: 24px; font-size: 0.95rem; }
+        .contact-row a { color: var(--accent); text-decoration: none; }
+        .contact-row a:hover { text-decoration: underline; }
+        .about { padding: 48px 0; border-bottom: 1px solid var(--border); }
+        .about p { font-size: 1.05rem; color: var(--text-secondary); max-width: 720px; }
+        .projects { padding: 48px 0; }
+        .projects h2 { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 1.5rem; font-weight: 500; margin-bottom: 40px; letter-spacing: -0.01em; }
+        .project { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 32px; overflow: hidden; }
+        .project-header { padding: 32px 32px 24px; border-bottom: 1px solid var(--border); }
+        .project-type { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+        .project-header h3 { font-family: 'IBM Plex Serif', Georgia, serif; font-size: 1.35rem; font-weight: 500; margin-bottom: 8px; }
+        .project-meta { font-size: 0.9rem; color: var(--text-secondary); }
+        .project-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+        .project-images { padding: 24px; background: #f5f7f9; display: flex; flex-direction: column; gap: 16px; }
+        .project-images img { width: 100%; border-radius: 4px; border: 1px solid var(--border); }
+        .project-content { padding: 24px 32px; }
+        .project-section { margin-bottom: 20px; }
+        .project-section:last-child { margin-bottom: 0; }
+        .project-section h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); margin-bottom: 8px; font-weight: 600; }
+        .project-section p { font-size: 0.95rem; color: var(--text); }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill-tag { background: var(--tag-bg); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; color: var(--text-secondary); }
+        footer { padding: 48px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-secondary); font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            header { padding: 48px 0 40px; }
+            header h1 { font-size: 2rem; }
+            .project-body { grid-template-columns: 1fr; }
+            .project-images { order: -1; }
+            .contact-row { flex-direction: column; gap: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daniel Shaw</h1>
+            <p class="subtitle">MEng Biomedical Engineering · Imperial College London · Expected 2026</p>
+            <div class="contact-row">
+                <span>dannyshaw639@gmail.com</span>
+                <span>+44 7771 365988</span>
+                <a href="https://www.linkedin.com/in/danielaurnpatrickshaw" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+        <section class="about">
+            <p>Biomedical engineering student with hands-on experience in microfluidic device design and fabrication, FEA, and medical device prototyping. Interested in how engineered devices interact with living tissue — the biocompatibility, mechanical, and physiological constraints that shape what's possible when designing for the human body.</p>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <article class="project">
+                <div class="project-header">
+                    <p class="project-type">Master's Research Project</p>
+                    <h3>Microfluidics — Effects of Mechanical Stress on Metastatic Phenotype</h3>
+                    <p class="project-meta">Imperial College London · 2025–Present</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-images">
+                        <img src="images/img-001.png" alt="Microscope setup">
+                        <img src="images/img-002.png" alt="Device diagram">
+                        <img src="images/img-003.png" alt="Cell culture">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-section"><h4>Context</h4><p>Circulating tumour cells experience mechanical stress during capillary transit. This project investigated whether that stress causes breast cancer cells to shift toward a more metastatic phenotype.</p></div>
+                        <div class="project-section"><h4>My Role</h4><p>Individual research project. I managed all fabrication, experiments, and analysis, with training from my supervisor.</p></div>
+                        <div class="project-section"><h4>Approach</h4><p>I fabricated microfluidic capillary bifurcations in PDMS, then conducted perfusion experiments to expose breast cancer cells to capillary-like mechanical stresses. I extracted mRNA, synthesised cDNA, and ran qPCRs on a gene panel I identified via literature review. I also conducted a 24-hour proliferation assay to assess the effects of capillary transit over a longer time frame.</p></div>
+                        <div class="project-section"><h4>Outcome</h4><p>Found trends suggesting altered inflammation and chemotaxis responses to capillary stresses. Gained hands-on experience across the full workflow — from microfluidic fabrication through to cell culture maintenance, molecular biology and data interpretation.</p></div>
+                        <div class="project-section"><h4>Skills</h4><div class="skills-list"><span class="skill-tag">PDMS Fabrication</span><span class="skill-tag">Plasma Bonding</span><span class="skill-tag">Cleanroom</span><span class="skill-tag">Cell Culture</span><span class="skill-tag">Aseptic Technique</span><span class="skill-tag">mRNA Extraction</span><span class="skill-tag">qPCR</span><span class="skill-tag">Data Analysis</span></div></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project-header">
+                    <p class="project-type">Third Year Group Project</p>
+                    <h3>Microfluidics — Effects of Shear Rate on Cell Viability</h3>
+                    <p class="project-meta">Imperial College London · 2024–2025</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-images">
+                        <img src="images/img-006.png" alt="Microfluidic device">
+                        <img src="images/img-007.png" alt="Flow diagram">
+                        <img src="images/img-008.png" alt="COMSOL simulation">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-section"><h4>Context</h4><p>Syringe-based cell therapy delivery kills up to 95% of cells due to high fluid shear rates. This project aimed to measure the critical shear rate threshold to inform better delivery device design.</p></div>
+                        <div class="project-section"><h4>My Role</h4><p>Seven-person group project. I independently led all device fabrication and rapid prototyping, and took charge of COMSOL simulations. I contributed to MATLAB modelling in a subgroup of three.</p></div>
+                        <div class="project-section"><h4>Approach</h4><p>Used COMSOL to determine entrance/exit lengths for flow stabilisation. Used MATLAB to model velocity and shear rate profiles. Designed and fabricated eight prototypes iteratively — widened the inlet funnel to prevent cell overshoot, tested winding and gradual-expansion outlets, and found that a sudden expansion slowed and spread cells for more accurate imaging.</p></div>
+                        <div class="project-section"><h4>Outcome</h4><p>Delivered a working device geometry that controlled cell positioning and enabled clear imaging. Learned that fast iteration and direct observation beat theoretical assumptions of geometry.</p></div>
+                        <div class="project-section"><h4>Skills</h4><div class="skills-list"><span class="skill-tag">COMSOL Multiphysics</span><span class="skill-tag">MATLAB</span><span class="skill-tag">Wafer Fabrication</span><span class="skill-tag">Photolithography</span><span class="skill-tag">PDMS Casting</span><span class="skill-tag">Plasma Bonding</span><span class="skill-tag">Rapid Prototyping</span></div></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project-header">
+                    <p class="project-type">Third Year Coursework</p>
+                    <h3>Finite Element Analysis of a Clevis</h3>
+                    <p class="project-meta">Imperial College London · 2025</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-images">
+                        <img src="images/img-010.png" alt="Clevis original design">
+                        <img src="images/img-011.png" alt="Clevis FEA analysis">
+                        <img src="images/img-012.png" alt="Clevis redesign">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-section"><h4>Context</h4><p>A clevis joint for a prosthetic test rig was failing under 1.5kN tensile loading. The original design had a safety factor of 0.16 and fatigue life of approximately 100 cycles. The task was to redesign the geometry to meet static and fatigue requirements while meeting clearance constraints.</p></div>
+                        <div class="project-section"><h4>My Role</h4><p>Individual coursework. Full ownership of analysis, redesign, and validation.</p></div>
+                        <div class="project-section"><h4>Approach</h4><p>Ran a mesh convergence study, then conducted static and fatigue FEA in SolidWorks. Identified that stress concentrations at sharp internal corners were driving both static failure and fatigue crack initiation. Iterated through geometric modifications — filleting high-stress regions, adding reinforcement, adjusting wall thicknesses — while checking each iteration against clearance constraints.</p></div>
+                        <div class="project-section"><h4>Outcome</h4><p>Increased the safety factor from 0.16 to 2.62 and fatigue life from ~100 cycles to over 1 million. Learned how sensitive stress distribution is to small geometric features (fillets, radii), and how to balance competing constraints like strength, clearance, and weight.</p></div>
+                        <div class="project-section"><h4>Skills</h4><div class="skills-list"><span class="skill-tag">SolidWorks</span><span class="skill-tag">FEA</span><span class="skill-tag">Mesh Convergence</span><span class="skill-tag">Stress Analysis</span><span class="skill-tag">Design Iteration</span></div></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project-header">
+                    <p class="project-type">Personal Project</p>
+                    <h3>Bicycle Mechanic and Sales</h3>
+                    <p class="project-meta">Victoria Park · 2023–Present</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-images">
+                        <img src="images/img-013.png" alt="Bicycle 1">
+                        <img src="images/img-014.png" alt="Bicycle 2">
+                        <img src="images/img-015.png" alt="Bicycle 3">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-section"><h4>Context</h4><p>Several parts were stolen from my bike so I decided to build my own from the remaining parts instead of buying one new. I started with no knowledge of bikes or mechanical experience.</p></div>
+                        <div class="project-section"><h4>My Role</h4><p>Solo project. I sourced my own parts and taught myself all repair and assembly skills. I also managed the sales of the bicycles I refurbished.</p></div>
+                        <div class="project-section"><h4>Approach</h4><p>Learned by doing, starting with online forums and video tutorials. Applied hands-on trial and error to learn about and assemble each part. Disassembled jammed brake callipers to restore them to working order. Over years of maintaining my own bike and troubleshooting accumulated issues, I developed a range of mechanic skills and applied these to selling and refurbishing old bikes.</p></div>
+                        <div class="project-section"><h4>Outcome</h4><p>Built a bike from parts which I am still using 3 years later. These experiences taught me how to think diagnostically and trust my ability to tackle and resolve problems.</p></div>
+                        <div class="project-section"><h4>Skills</h4><div class="skills-list"><span class="skill-tag">Mechanical Assembly</span><span class="skill-tag">Fault Diagnosis</span><span class="skill-tag">Part Sourcing</span><span class="skill-tag">Brake Tuning</span><span class="skill-tag">Derailleur Tuning</span></div></div>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project-header">
+                    <p class="project-type">Second Year Group Project</p>
+                    <h3>A Physiotherapy Tool for Eye Muscles</h3>
+                    <p class="project-meta">Imperial College London · 2023–2024</p>
+                </div>
+                <div class="project-body">
+                    <div class="project-images">
+                        <img src="images/img-017.png" alt="VR physiotherapy tool">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-section"><h4>Context</h4><p>Convergence insufficiency affects 1 in 20 people and is treated with repetitive eye exercises. Patient compliance is poor, especially in children. The goal was to develop a VR tool that gamifies these exercises to improve engagement.</p></div>
+                        <div class="project-section"><h4>My Role</h4><p>I co-led a team of ten and co-developed the game mechanics in Unity as part of a 2-person subteam. I also proposed the final gamification concept the team adopted.</p></div>
+                        <div class="project-section"><h4>Approach</h4><p>Structured the project by breaking work into sections and assigning tasks based on individual strengths. Reached out to an ophthalmologist to validate clinical feasibility. Produced a product specification document covering features, requirements, and risks. Took inspiration from existing games and merged them with physiotherapy exercises to produce engaging game mechanics.</p></div>
+                        <div class="project-section"><h4>Outcome</h4><p>Produced a functional prototype of a VR physiotherapy tool aimed at children. Learned how clinical input early in the design process prevents wasted effort — the ophthalmologist's feedback shaped our direction before we committed to building.</p></div>
+                        <div class="project-section"><h4>Skills</h4><div class="skills-list"><span class="skill-tag">Unity</span><span class="skill-tag">Product Specification</span><span class="skill-tag">Requirements Documentation</span><span class="skill-tag">Clinical Liaison</span><span class="skill-tag">Team Leadership</span></div></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer><p>Daniel Shaw · 2026</p></footer>
+    </div>
+</body>
+</html>
